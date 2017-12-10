@@ -59,9 +59,10 @@ a:active {
 /* Main Styles --------------------- */
 
 .main-header {
-  background-color: #ffa949;
   padding-top: 170px;
   height: 850px;
+  background: cornflowerBlue  url('../img/seaScape.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .title {
@@ -114,13 +115,32 @@ a:active {
   max-width: 900px;
 }
 
-.wildlife {
+/*article {
   color: white;
   background-color: #434a52;
   padding: 18% 24%;
   border-top: 10px solid #ffa949;
   margin: 105px 0 60px;
+}*/
+
+/*Floated Columns*/
+
+.seeing-section,
+.hearing-section{
+  width: 46.5%;
 }
 
+.hearing-section{
+  float: right;
+}
 
-/*secondary classes*/
+.seeing-section{
+  float: left;
+}
+
+/*float clearfix*/
+.group:after{
+  content:"";
+  display: table;
+  clear: both;
+}
