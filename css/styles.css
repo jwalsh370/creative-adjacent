@@ -65,6 +65,7 @@ a:active {
   color: lightcoral;
 }
 
+
 /* Main Styles --------------------- */
 
 .main-header {
@@ -146,4 +147,28 @@ a:active {
   content:"";
   display: table;
   clear: both;
+}
+
+/*Nav Styles*/
+
+#main-nav {
+	list-style: none;
+  float: none;
+	margin-right: 50%;
+  padding-left: 1em;
+  align-content: center;
+  width: 100%;
+  background-color: steelblue;
+}
+
+li a {
+	color: #544738;
+	text-decoration: none;
+	float: left;
+	font-size: 20px;
+	padding: 12px;
+}
+
+li a:hover {
+	color: #7eb9be;
 }
