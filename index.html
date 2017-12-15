@@ -9,10 +9,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!-- Facebook Comment SDK -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <header id="top" class="main-header darken">
     <span class="title">A Personal Blog</span>
       <h1>Creative Adjacent</h1>
     </div>
+    <!-- Facebook Comment SDK End -->
   </header>
   <nav>
     <ul id="main-nav" class="group">
@@ -85,6 +95,7 @@
       </article>
     </section>
   </div>
+    <div class="fb-comments" data-href="file:///Users/jahanwalsh/Desktop/creative-adjacent/index.htmlfile:///Users/jahanwalsh/Desktop/creative-adjacent/index.html" data-width="30" data-numposts="5"></div>
   <footer class="main-footer">
     <p id="contact">By: Jahan Imari</p>
     <p>Contact:<a href="mailto:creativeadjacent@gmail.com?subject=Mail from Creative Adjacent"> CreativeAdjacent@gmail.com</a></p>
