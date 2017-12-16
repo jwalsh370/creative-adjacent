@@ -188,9 +188,9 @@ a:active {
   }
 
   .about-special{
-    border: 0 solid #F3D250;
     background-color: #ececec;
     text-align: center;
+    margin-right: 10%;
   }
 
   .top-mc,
@@ -226,7 +226,7 @@ a:active {
   width: 46.5%;
 }*/
 .about-section{
-  width: 40%;
+  width: 48%;
 }
 
  .music-bar{
