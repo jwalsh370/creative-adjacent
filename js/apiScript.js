@@ -1,4 +1,12 @@
-var url = "https://api.nasa.gov/planetary/apod?api_key=MqCztqNlGnYBNxYu79zjGfyEODbfdR7uJEuuCL9Y";
+
+// Function to retrieve date from input.
+// var date = function userDate() {
+//    var input = document.getElementById("datepicker").value;
+//    console.log(input);
+// }
+
+
+var url = "https://api.nasa.gov/planetary/apod?api_key=2SWqmfBuIl0T1CkO3piiBCDnOONBuH1cNgaaWItH&hd=true"
 
 
 $.ajax({

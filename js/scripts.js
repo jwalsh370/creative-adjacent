@@ -10,4 +10,9 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 },  3000);
+// Date picker jquery.
+// $( "#datepicker" ).datepicker({
+//   altFormat: "yy-mm-dd"
+// });
+
 });
