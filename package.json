@@ -1,0 +1,27 @@
+{
+  "name": "creative-adjacent",
+  "version": "1.0.0",
+  "description": "A personal Blog for Jahan Imari",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "Test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwalsh370/creative-adjacent.git"
+  },
+  "keywords": [
+    "Creative",
+    "Adjacent"
+  ],
+  "author": "Jahan Imari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwalsh370/creative-adjacent/issues"
+  },
+  "homepage": "https://github.com/jwalsh370/creative-adjacent#readme"
+}
