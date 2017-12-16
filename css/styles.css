@@ -280,10 +280,12 @@ li a:hover {
 #slideshow {
     margin: 50px auto;
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     padding: 10px;
     box-shadow: 0 0 0 rgba(0,0,0,1);
+    overflow-y: auto;
+    object-fit: cover;
 }
 
 #slideshow > div {
