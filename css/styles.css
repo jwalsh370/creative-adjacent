@@ -71,11 +71,22 @@ a:active {
 
 /* Main Styles --------------------- */
 
-.main-header {
+.main-header{
   padding-top: 170px;
   height: 850px;
   background: cornflowerBlue   no-repeat center;
   background-size: cover;
+}
+
+.about-header {
+  padding-top: 170px;
+  height: 850px;
+  background: cornflowerBlue    no-repeat center;
+  background-size: cover;
+}
+
+.about-header-text{
+  color: #F3D250;
 }
 
 /*image darken gradient*/
@@ -85,12 +96,21 @@ a:active {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('../img/headerImage.jpg');
+    url('../img/group.jpg');
+  }
+
+.about-darken {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/leaves.jpg');
   }
 
 .title {
   color: white;
-  font-size: 1.625rem; /* 26px/16px */
+  font-size: 4em; /* 48px */
 }
 
 .intro {
@@ -100,7 +120,8 @@ a:active {
 
 .primary-content,
 .main-header,
-.main-footer {
+.main-footer,
+.about-header {
   text-align: center;
 }
 
@@ -121,6 +142,7 @@ a:active {
   padding-top: 60px;
   padding-bottom: 60px;
   border-bottom: 10px solid #ffa949;
+  /*background-color: #F78888;*/
 }
 
 .t-border {
@@ -141,7 +163,7 @@ a:active {
 
 #follow-me {
   text-decoration: underline;
-  color: #F78888;
+  color: #F3D250;
 }
 /* Layout Styles ------------------ */
 
@@ -252,3 +274,23 @@ li a:hover {
     background: #3B5998;
     color: white;
 }
+/*End Social Media Icons*/
+
+/*Begin Slide Show Styles*/
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+/*End Slide Show Styles*/
