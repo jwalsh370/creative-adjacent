@@ -99,14 +99,6 @@ a:active {
     url('../img/header-image.jpg');
   }
 
-.about-darken {
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('../img/leaves.jpg');
-  }
 
 .title {
   color: white;
@@ -120,8 +112,7 @@ a:active {
 
 .primary-content,
 .main-header,
-.main-footer,
-.about-header {
+.main-footer {
   text-align: center;
 }
 
@@ -149,6 +140,33 @@ a:active {
   border-top: 2px solid #dfe2e6;
 }
 
+
+
+#follow-me {
+  text-decoration: underline;
+  color: #F3D250;
+}
+
+/*About page styles*/
+
+.about-header {
+  padding-top: 170px;
+  height: 850px;
+  background: cornflowerBlue    no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.about-header-text{
+  color: #F3D250;
+}
+
+
+.section-title{
+  color: #F78888;
+  font-size: 1.25em;
+}
+
 .music-bar{
   margin-right: 10px;
 }
@@ -158,13 +176,36 @@ a:active {
   height: 20%;
   margin-left: 50px;
   /*border: 4px solid #ececec;*/
-
 }
 
-#follow-me {
-  text-decoration: underline;
-  color: #F3D250;
+.about-darken {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/leaves.jpg');
+  }
+
+  .about-special{
+    border: 0 solid #F3D250;
+    background-color: #ececec;
+    text-align: center;
+  }
+
+  .top-mc,
+  .top-manga{
+    border-right: 2px solid #F3D250;
+    font-size: .8em;
+    list-style-type: none;
+  }
+
+  .top-film{
+  border-left: 2px solid #F3D250;
+  text-align: center;
+  font-size: .8em;
 }
+
 /* Layout Styles ------------------ */
 
 .primary-content,
@@ -185,14 +226,16 @@ a:active {
   width: 46.5%;
 }*/
 .about-section{
-  width: 50%;
+  width: 40%;
 }
 
  .music-bar{
   float: right;
 }
 
- .main, .profile-photo{
+ .main,
+ .profile-photo
+ {
   float: left;
 }
 
