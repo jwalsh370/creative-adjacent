@@ -1,0 +1,361 @@
+/*Font Imports*/
+@import url('https://fonts.googleapis.com/css?family=Amiri|PT+Serif');
+/* Base Styles */
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  margin: 0;
+  font: 1em/1.5 "PT Serif",  serif, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 5.625rem; /* 90px/16px  */
+  color: #F78888;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 0px 1px 1 rgba(0,0,0,.8);
+}
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #5DA2D5;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type:disc;
+}
+
+li{
+  margin: 30px 0;
+  text-decoration: none;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: #90ccf4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f78888;
+}
+
+a:hover {
+  color: #F78888;
+}
+
+a:active {
+  color: #F3D250;
+}
+
+
+/* Main Styles --------------------- */
+
+.main-header{
+  padding-top: 170px;
+  height: 850px;
+  background: cornflowerBlue   no-repeat center;
+  background-size: cover;
+}
+
+.about-header {
+  padding-top: 170px;
+  height: 850px;
+  background: cornflowerBlue    no-repeat center;
+  background-size: cover;
+}
+
+.about-header-text{
+  color: #F3D250;
+}
+
+/*image darken gradient*/
+.darken {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/header-image.jpg');
+  }
+
+
+.title {
+  color: white;
+  font-size: 4em; /* 48px */
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+	padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content{
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+  text-align: center;
+}
+
+
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #ffa949;
+  /*background-color: #F78888;*/
+}
+
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+
+
+#follow-me {
+  text-decoration: underline;
+  color: #F3D250;
+}
+
+/*About page styles*/
+
+.about-header {
+  padding-top: 170px;
+  height: 850px;
+  background: cornflowerBlue    no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.about-header-text{
+  color: #F3D250;
+}
+
+
+.section-title{
+  color: #F78888;
+  font-size: 1.25em;
+}
+
+.music-bar{
+  margin-right: 10px;
+}
+
+.profile-photo{
+  width: 20%;
+  height: 20%;
+  margin-left: 50px;
+  /*border: 4px solid #ececec;*/
+}
+
+.about-darken {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/leaves.jpg');
+  }
+
+  .about-special{
+    background-color: #ececec;
+    text-align: center;
+    margin-right: 10%;
+  }
+
+  .top-mc,
+  .top-manga{
+    border-right: 2px solid #F3D250;
+    font-size: .8em;
+    list-style-type: none;
+  }
+
+  .top-film{
+  border-left: 2px solid #F3D250;
+  text-align: center;
+  font-size: .8em;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content,
+.secondary-content{
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 900px;
+}
+
+.about-section {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 10%;
+  margin: auto;
+  max-width: 900px;
+}
+
+
+/*Floated Columns*/
+
+/*.seeing-section,
+.hearing-section{
+  width: 46.5%;
+}*/
+.about-section{
+  width: 48%;
+}
+
+ .music-bar{
+  float: right;
+}
+
+ .main,
+ .profile-photo
+ {
+  float: left;
+}
+
+/*float clearfix*/
+.group:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+/*Nav Styles*/
+
+#main-nav {
+	list-style: none;
+  float: none;
+	margin-right: 50%;
+  padding-left: 1em;
+  align-content: center;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.widgets{
+  list-style: none;
+  float: none;
+	margin-left: 55.5%;
+  padding-right: 1em;
+  /*padding-top: -100%;
+  padding-bottom: -100%;*/
+  align-content: center;
+  font-size: 25px;
+  width: 100%;
+}
+
+li a {
+	color: #5DA2D5;
+	text-decoration: none;
+	float: left;
+	font-size: 1.25em;/*25px*/
+	padding: 12px;
+}
+
+li a:hover {
+	color: #F3D250;
+}
+
+/*social media icons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: right;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Soundcloud */
+.fa-soundcloud {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-github {
+    background: #3B5998;
+    color: white;
+}
+/*End Social Media Icons*/
+
+/*Begin Slide Show Styles*/
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    padding: 8px;
+    box-shadow: 0 0 0 rgba(0,0,0,1);
+    overflow-y:auto;
+    object-fit: cover;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+/*End Slide Show Styles*/
+/*DatePicker Styles*/
+/*.ui-datepicker-calendar{
+  background-color: red;
+}*/
+/*Nasa Styles*/
+.nasa{
+  border: 2px solid #F3D250;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background-color: #ececec;
+  padding-top: 10%;
+}
