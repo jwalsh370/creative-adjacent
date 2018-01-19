@@ -71,11 +71,18 @@ a:active {
 
 /* Main Styles --------------------- */
 
+.container{
+  flex-direction: container;
+}
+
 .main-header{
   padding-top: 170px;
   height: 850px;
   background: cornflowerBlue   no-repeat center;
   background-size: cover;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .about-header {
@@ -119,6 +126,9 @@ a:active {
 .primary-content {
 	padding-top: 25px;
   padding-bottom: 95px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .secondary-content{
@@ -126,6 +136,9 @@ a:active {
 	padding-bottom: 70px;
   border-bottom: 2px solid #dfe2e6;
   text-align: center;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 
@@ -261,9 +274,12 @@ a:active {
   float: none;
 	margin-right: 50%;
   padding-left: 1em;
-  align-content: center;
   width: 100%;
   background-color: #ececec;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
 }
 
 .widgets{
@@ -358,4 +374,23 @@ li a:hover {
   text-align: center;
   background-color: #ececec;
   padding-top: 10%;
+}
+
+/* Media Query */
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  #main-nav {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: flex-end;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 575px) {
+  #main-nav, .primary-content, .secondary-content {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: center;
+    flex-wrap: row wrap;
+  }
 }
